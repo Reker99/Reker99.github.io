@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBC ARCHIVE // E. JURADO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_final.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="site-header">
+        <nav>
+            <div class="logo">SYS.<span>ADMIN</span></div>
+
+            <!-- Botón hamburguesa (solo visible en móvil) -->
+            <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hb-line"></span>
+                <span class="hb-line"></span>
+                <span class="hb-line"></span>
+            </button>
+
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#perfil"><span class="nav-num">01</span>PERFIL</a></li>
+                <li><a href="#habilidades"><span class="nav-num">02</span>DATA</a></li>
+                <li><a href="#trayectoria"><span class="nav-num">03</span>LOGS</a></li>
+                <li><a href="#proyectos"><span class="nav-num">04</span>ARCHIVOS</a></li>
+                <li><a href="#contacto"><span class="nav-num">05</span>SEÑAL</a></li>
+		<li style="display: flex; align-items: center; margin-left: 1rem;">
+                    <button id="theme-toggle" aria-label="Alternar modo visual">[LHT]</button>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ══════════════════════════════════
+             HERO / PERFIL
+        ══════════════════════════════════ -->
+        <section id="perfil" class="hero reveal">
+            <div class="hero-grid">
+
+                <!-- Texto principal -->
+                <div class="hero-content">
+                    <p class="hero-eyebrow">IDENTIFICADOR: INGENIERÍA EN SISTEMAS ELECTRÓNICOS · UACJ</p>
+                    <h1>
+                        EMILIO<br>
+                        <span class="name-accent" data-glitch="JURADO">JURADO</span>
+                    </h1>
+                    <p class="hero-bio">
+                        Ingeniero electrónico enfocado en sistemas de adquisición de datos,
+                        control secuencial y la interfaz hardware-software.
+                        Especialista en LabVIEW e instrumentación.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#proyectos" class="btn-primary">ACCEDER A ARCHIVOS</a>
+                        <a href="#contacto" class="btn-secondary">INICIAR CONTACTO</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-block">
+                            <span class="stat-num">8VO</span>
+                            <span class="stat-label">SEMESTRE UACJ</span>
+                        </div>
+                        <div class="stat-block">
+                            <span class="stat-num">B2</span>
+                            <span class="stat-label">NIVEL INGLÉS</span>
+                        </div>
+                        <div class="stat-block">
+                            <span class="stat-num">04</span>
+                            <span class="stat-label">PROYECTOS CLAVE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen de perfil -->
+                <div class="hero-image">
+                    <div class="profile-frame">
+                        <!--
+                            Pon tu foto en la misma carpeta con el nombre: perfil.jpg
+                            Si tu imagen es PNG, cambia el src a: perfil.png
+                        -->
+                        <img src="perfil.jpg"
+                             alt="Emilio Jurado Cano"
+                             class="profile-pic"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                        <div class="profile-fallback">EJC</div>
+                    </div>
+                    <p class="profile-caption">// IDENTIFICADO: E.JURADO_CANO</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════
+             HABILIDADES
+        ══════════════════════════════════ -->
+        <section id="habilidades" class="reveal">
+            <div class="section-header">
+                <span class="section-label">DIRECTORIO 02</span>
+                <h2>MATRIZ DE HABILIDADES</h2>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>STACK TÉCNICO</h3>
+                    <dl class="skills-list">
+                        <div class="skill-card">
+                            <dt>LABVIEW &amp; DAQ</dt>
+                            <dd>NI USB-6009, adquisición de datos en tiempo real, interfaces SCADA y máquinas de estados finitos.</dd>
+                        </div>
+                        <div class="skill-card">
+                            <dt>HARDWARE EMBEBIDO</dt>
+                            <dd>ESP32-S3, Arduino, MQTT/Wi-Fi, NeoPixel y circuitos PID analógicos con Op-Amps.</dd>
+                        </div>
+                        <div class="skill-card">
+                            <dt>IA &amp; SOFTWARE</dt>
+                            <dd>Python (NumPy, PySide6, scikit-learn), redes neuronales para regresión, MATLAB, C++.</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="skill-category">
+                    <h3>CAPACIDADES OPERATIVAS</h3>
+                    <dl class="skills-list">
+                        <div class="skill-card">
+                            <dt>TRABAJO BAJO PRESIÓN</dt>
+                            <dd>Rendimiento probado bajo carga extrema — 8 materias simultáneas con promedio más alto de generación.</dd>
+                        </div>
+                        <div class="skill-card">
+                            <dt>ANÁLISIS CRÍTICO</dt>
+                            <dd>Resolución sistemática de problemas complejos en laboratorio e implementación de soluciones de precisión.</dd>
+                        </div>
+                        <div class="skill-card">
+                            <dt>LIDERAZGO TÉCNICO</dt>
+                            <dd>Dirección de equipos académicos, documentación técnica rigurosa y comunicación de conceptos de ingeniería.</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════
+             TRAYECTORIA
+        ══════════════════════════════════ -->
+        <section id="trayectoria" class="reveal">
+            <div class="section-header">
+                <span class="section-label">DIRECTORIO 03</span>
+                <h2>REGISTRO TEMPORAL</h2>
+            </div>
+
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <span class="tl-year">ACTUALIDAD // 2026</span>
+                    <h4>8vo Semestre · Fullstack &amp; Hardware</h4>
+                    <p>Expansión hacia desarrollo fullstack manteniendo especialidad en sistemas electrónicos inteligentes.</p>
+                    <span class="tl-tag tl-blue">EN CURSO</span>
+                </li>
+                <li class="timeline-item">
+                    <span class="tl-year">AGO-DIC // 2025</span>
+                    <h4>IA Regresor de Distancia</h4>
+                    <p>Red neuronal de regresión integrada con acondicionamiento analógico de señal de alta precisión.</p>
+                    <span class="tl-tag tl-purple">IA + HW</span>
+                </li>
+                <li class="timeline-item">
+                    <span class="tl-year">2025</span>
+                    <h4>Practicante en Trico</h4>
+                    <p>4 meses de experiencia industrial. Posición concluida por cierre de operaciones en Ciudad Juárez.</p>
+                    <span class="tl-tag tl-gray">INDUSTRIA</span>
+                </li>
+                <li class="timeline-item">
+                    <span class="tl-year">ENE-JUN // 2024</span>
+                    <h4>Estudiante Destacado UACJ</h4>
+                    <p>Premio a la excelencia académica cursando 8 materias simultáneas.</p>
+                    <span class="tl-tag tl-gold">PREMIO</span>
+                </li>
+            </ol>
+        </section>
+
+        <!-- ══════════════════════════════════
+             PROYECTOS
+        ══════════════════════════════════ -->
+        <section id="proyectos" class="reveal">
+            <div class="section-header">
+                <span class="section-label">DIRECTORIO 04</span>
+                <h2>ARCHIVOS CLASIFICADOS</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <span class="project-num">01</span>
+                    <h3>Simulador Lógico DAQ</h3>
+                    <p>Ciclo de lavadora simulado en LabVIEW con NI USB-6009 y lógica digital de 8-bits.</p>
+                    <div class="tags">
+                        <span class="tag">LABVIEW</span>
+                        <span class="tag">NI USB-6009</span>
+                        <span class="tag">DAQ</span>
+                    </div>
+                    <button class="btn-proyecto" data-id="0">VER ARCHIVO →</button>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-num">02</span>
+                    <h3>Regresor Neural</h3>
+                    <p>IA para inferencia de distancia integrada con acondicionamiento analógico de señal.</p>
+                    <div class="tags">
+                        <span class="tag">PYTHON</span>
+                        <span class="tag">IA</span>
+                        <span class="tag">OP-AMPS</span>
+                    </div>
+                    <button class="btn-proyecto" data-id="1">VER ARCHIVO →</button>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-num">03</span>
+                    <h3>Controlador PID Analógico</h3>
+                    <p>Implementado con amplificadores operacionales para estabilizar sistemas de segundo orden.</p>
+                    <div class="tags">
+                        <span class="tag">HARDWARE</span>
+                        <span class="tag">CONTROL</span>
+                        <span class="tag">OP-AMPS</span>
+                    </div>
+                    <button class="btn-proyecto" data-id="2">VER ARCHIVO →</button>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-num">04</span>
+                    <h3>Nodo Inteligente MQTT</h3>
+                    <p>Arquitectura IoT con ESP32-S3 para el control de LEDs NeoPixel vía protocolo MQTT.</p>
+                    <div class="tags">
+                        <span class="tag">ESP32-S3</span>
+                        <span class="tag">MQTT</span>
+                        <span class="tag">IOT</span>
+                    </div>
+                    <button class="btn-proyecto" data-id="3">VER ARCHIVO →</button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════
+             CONTACTO
+        ══════════════════════════════════ -->
+        <section id="contacto" class="reveal">
+            <div class="section-header">
+                <span class="section-label">DIRECTORIO 05</span>
+                <h2>ESTABLECER COMUNICACIÓN</h2>
+            </div>
+
+            <form id="contact-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">IDENTIFICADOR (NOMBRE) <abbr title="obligatorio">*</abbr></label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name">
+                        <span class="field-error" id="error-nombre"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">ENLACE DE RETORNO (EMAIL) <abbr title="obligatorio">*</abbr></label>
+                        <input type="email" id="email" name="email" placeholder="tu@correo.com" autocomplete="email">
+                        <span class="field-error" id="error-email"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">DATOS A TRANSMITIR (MENSAJE) <abbr title="obligatorio">*</abbr></label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describe tu proyecto o consulta..."></textarea>
+                    <span class="field-error" id="error-mensaje"></span>
+                </div>
+                <button type="submit" class="btn-primary">
+                    <span class="btn-text">TRANSMITIR DATOS</span>
+                </button>
+                <div id="form-feedback" class="form-feedback"></div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SISTEMA DEL FEDERAL BUREAU OF CONTROL // EJC ARCHIVES &copy; 2026</p>
+    </footer>
+
+    <!-- ══════════════════════════════════
+         MODAL DE PROYECTOS
+    ══════════════════════════════════ -->
+    <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" aria-hidden="true">
+        <div class="modal-card">
+            <div class="modal-topbar">
+                <span class="modal-status"></span>
+                <button id="modal-close" class="modal-close">[ CERRAR ARCHIVO ]</button>
+            </div>
+            <p class="modal-num"></p>
+            <h3 id="modal-titulo"></h3>
+            <p id="modal-descripcion"></p>
+            <div class="modal-section">
+                <h4>// TECNOLOGÍAS UTILIZADAS</h4>
+                <div id="modal-tags" class="tags"></div>
+            </div>
+            <div class="modal-section">
+                <h4>// DETALLES TÉCNICOS</h4>
+                <ul id="modal-detalles"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script_final.js"></script>
+</body>
+</html>
